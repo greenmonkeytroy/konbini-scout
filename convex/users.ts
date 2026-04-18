@@ -46,3 +46,14 @@ export const me = query({
       .unique();
   },
 });
+
+/** Public lookup by Clerk ID — used when Convex JWT auth is unavailable */
+export const byClerkId = query({
+  args: { clerkId: v.string() },
+  handler: async (ctx, args) => {
+    return await ctx.db
+      .query("users")
+      .withIndex("by_clerkId", (q) => q.eq("clerkId", args.clerkId))
+      .unique();
+  },
+});
