@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "createdAt": "2026-04-16T12:15:00Z",
+    "updatedAt": "2026-04-16T12:15:00Z",
+    "version": "1.0",
+    "plaidVersion": "1.0"
+  },
+  "creator": {
+    "name": "Troy",
+    "expertise": "Creative Director — strong on visual design, brand strategy, and creative direction. More creative than coder, uses AI coding tools to build.",
+    "background": "A 20-year veteran of trying Asian snacks with a creative director's eye for presentation. Has an archive of photos of finished snack packets. Passionate foodie who lives at the intersection of design and Asian snack culture."
+  },
+  "purpose": {
+    "whoYouHelp": "Western snack explorers who are curious about Asian snacks but don't know where to start — people who find walking into an Asian supermarket exciting but overwhelming.",
+    "problemYouSolve": "Discovering Asian snacks is intimidating for newcomers. Everything is in different languages, there are hundreds of options, and there's no approachable way to browse, filter, and find what's good. Existing resources are chaotic text lists, random Amazon listings, or subscription boxes you can't control.",
+    "desiredTransformation": "Users go from feeling lost and overwhelmed to feeling confident and excited — knowing exactly which 5 snacks to grab next time they're in an Asian grocery store. Over time they build knowledge of flavour families and makers, and become part of a community of fellow snack explorers.",
+    "whyYou": "20 years of personal experience tasting and cataloguing Asian snacks, combined with a creative director's ability to present them in a way that's visually compelling and approachable. Has the content library (product photos) and the design instinct to make this work."
+  },
+  "product": {
+    "name": "Konbini Scout",
+    "oneLiner": "Your guide to the best Asian snacks you haven't tried yet.",
+    "howItWorks": "Users start by choosing Savoury or Sweet, then browse by Flavour or by Maker. Top 5 results appear as illustrated products displayed on a virtual shelf — like browsing an Asian supermarket aisle. Users can tap any snack for the full detail page with real photos, flavour notes, and descriptions. Once they've tried snacks in real life, they rate them (1-5 lucky cats), build their own Top 5 shelf per category, compare their shelves to the community's, and create Shared Shelves — curated 5-pick recommendations they can send to friends.",
+    "keyCapabilities": [
+      "Savoury/Sweet first filter, then browse by Flavour or Maker with illustrated shelf display of top 5 results",
+      "Personal Top 5 shelf per category built from user ratings",
+      "Shared Shelves — curate and share a 5-snack recommendation with anyone",
+      "Community shelf comparison — see how your picks stack up against everyone else's",
+      "Lucky cat rating system (1-5) with grumpy cats for low scores and happy waving cats for high scores"
+    ],
+    "platform": "web",
+    "marketDifferentiation": "No one else presents snacks visually like you're browsing a store. The illustrated shelf display, constrained 5-pick format, and lucky cat ratings create a unique experience that's immediately shareable. The 5-item constraint keeps the barrier to participation low — anyone can pick 5.",
+    "magicMoment": "Someone receives a Shared Shelf link, clicks it, and lands on a beautiful illustrated shelf of 5 snack recommendations with lucky cat ratings. They instantly get the concept, want to try the snacks, and want to build their own shelf."
+  },
+  "audience": {
+    "primaryUser": "Western snack explorer, 20-35, curious about Asian food culture. They've seen Asian snacks on TikTok or in store but feel overwhelmed by choice. They know what flavours they like (spicy, sweet, matcha) but can't map that onto Asian snack brands. They want a visual, approachable way to discover and decide what to try.",
+    "secondaryUsers": [
+      "Expats and diaspora who already know Asian snacks well and want to rate, curate, and share their favourites",
+      "Social media snack influencers who could use Shared Shelves as content"
+    ],
+    "currentAlternatives": "Snack subscription boxes (Bokksu, TokyoTreat) — curate for you but no control or exploration. Reddit/TikTok communities — great discovery but chaotic, no structure, not searchable by flavour. Amazon/specialty retail sites — product listings with no curation, no shelf experience, no community.",
+    "frustrations": "Alternatives are either unstructured (social media chaos where you can't search by flavour), uncontrollable (subscription boxes that pick for you), or soulless (Amazon listings with no personality or visual appeal). Nothing recreates the feeling of browsing a shelf and seeing what catches your eye."
+  },
+  "business": {
+    "revenueModel": "free",
+    "initialGoal": "Database well-developed with depth of snack content and visual styling polished before soft launch. Illustrated shelf experience looking and feeling great. Enough snacks catalogued across savoury/sweet and multiple flavour/maker categories to feel rich.",
+    "sixMonthVision": "Soft launched, users signing up, people browsing and building shelves. Adding snacks regularly, refining based on user feedback, shared shelves circulating on social media. Growing organically.",
+    "constraints": "Budget: happy to spend hundreds now, moving to thousands later when bespoke delivery cartons are needed for the snack box phase. Troy is a creative director, not a coder — relies on AI coding tools. Content: has existing photo archive of finished snack packets.",
+    "goToMarket": "Shared shelves are the growth engine — users share curated 5-pick shelves on social media, friends click through and discover the platform. No personal brand or face-of-the-project marketing. Organic growth first, with potential to engage influencers later by sending curated snack boxes for them to try and rate."
+  },
+  "feeling": {
+    "brandPersonality": "Playful and vibrant — colourful, fun, a bit cheeky. Like walking into a brightly lit konbini at midnight. Packaging-forward, bold typography. The energy of unboxing and tasting is baked into the brand.",
+    "visualMood": "Retro Asian grocery — slightly nostalgic, hand-drawn feel, warm tones. Like vintage packaging labels brought to life. Illustrated snack products on the shelf level, real photography on the detail pages. The illustrated shelf is the signature visual element.",
+    "toneOfVoice": "Enthusiastic and snacky — casual, excitable, opinionated. 'This one SLAPS. Imagine wasabi met a rice cracker at a party and they hit it off.' Every snack description is worth reading on its own. The voice has personality and gives the community something to rally around.",
+    "antiPatterns": "Never corporate or clinical — no sterile product listings. Never weeby or cringey — appreciates Asian snack culture without being performative or fetishising it. Never elitist or gatekeepy — this is for beginners, never 'you haven't tried THIS?' Cultural appreciation without cringe is a firm line."
+  },
+  "techStack": {
+    "appType": "web",
+    "frontend": {
+      "choice": "Next.js",
+      "rationale": "Great for SEO (shared shelf links need good social previews), React ecosystem for interactive rating/shelf-building features, excellent Convex integration"
+    },
+    "backend": {
+      "choice": "Convex",
+      "rationale": "Real-time by default — great for live community shelves and rating updates. Built-in auth support, simple data modelling for snacks/makers/flavours/ratings/shelves relationships, TypeScript end-to-end"
+    },
+    "database": {
+      "choice": "Convex Database",
+      "rationale": "Included with Convex backend, reactive queries for real-time shelf and rating updates, handles the relational data model well"
+    },
+    "auth": {
+      "choice": "Clerk",
+      "rationale": "Pre-built UI components for near-zero sign-up friction, social login support (Google/Apple), first-class Convex integration, generous free tier"
+    },
+    "payments": {
+      "choice": "",
+      "rationale": "Skipped for now — passion project first. Will add Stripe later when the curated snack box mailout feature is ready."
+    }
+  },
+  "tooling": {
+    "codingAgent": "claude-code"
+  }
+}

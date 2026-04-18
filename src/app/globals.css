@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* ─── Konbini Scout Design System ─── */
+
+/* Color Tokens */
+:root {
+  --color-primary: #D94F4F;
+  --color-primary-hover: #C43C3C;
+  --color-secondary: #6B9B6B;
+  --color-accent: #F2C94C;
+  --color-background: #FAF6F0;
+  --color-surface: #EDE4D4;
+  --color-text: #2D2A26;
+  --color-text-muted: #7A756D;
+  --color-border: #D4CEC4;
+  --color-success: #6B9B6B;
+  --color-warning: #E8A838;
+  --color-error: #D94F4F;
+  --color-info: #5B8DB8;
+}
+
+/* Typography Tokens */
+:root {
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+  --leading-snug: 1.3;
+}
+
+/* Spacing Tokens */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+}
+
+/* ─── Tailwind v4 Theme ─── */
+/* Fonts are loaded via next/font/google in layout.tsx;
+   the CSS variables are set on <html> via className */
+@theme inline {
+  /* Colors */
+  --color-konbini-red: #D94F4F;
+  --color-konbini-red-dark: #C43C3C;
+  --color-matcha: #6B9B6B;
+  --color-yuzu: #F2C94C;
+  --color-rice-paper: #FAF6F0;
+  --color-shelf-wood: #EDE4D4;
+  --color-nori: #2D2A26;
+  --color-nori-light: #7A756D;
+  --color-border-warm: #D4CEC4;
+  --color-miso: #E8A838;
+  --color-ramune: #5B8DB8;
+
+  /* Font families — reference next/font CSS variables set on <html> */
+  --font-display: var(--font-heading), 'Dela Gothic One', sans-serif;
+  --font-body: var(--font-sans), 'Nunito', sans-serif;
+  --font-mono: var(--font-code), 'JetBrains Mono', monospace;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px rgba(45, 42, 38, 0.08);
+  --shadow-elevated: 0 8px 24px rgba(45, 42, 38, 0.12);
+
+  /* Transitions */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Base Styles ─── */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: var(--leading-tight);
+}
+
+/* ─── Focus Ring ─── */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(217, 79, 79, 0.15);
+  border-radius: 4px;
+}

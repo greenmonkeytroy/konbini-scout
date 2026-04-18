@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-label="Grumpy lucky cat">
+  <!-- Body -->
+  <ellipse cx="32" cy="42" rx="14" ry="16" fill="#FAF6F0" stroke="#2D2A26" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="32" cy="22" r="13" fill="#FAF6F0" stroke="#2D2A26" stroke-width="2"/>
+  <!-- Left ear (slightly flat/grumpy) -->
+  <path d="M20 13 L15 6 L22 12 Z" fill="#FAF6F0" stroke="#2D2A26" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Right ear -->
+  <path d="M44 13 L49 6 L42 12 Z" fill="#FAF6F0" stroke="#2D2A26" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Inner ear left -->
+  <path d="M20 12 L16 7 L21 11 Z" fill="#D4CEC4" opacity="0.4"/>
+  <!-- Inner ear right -->
+  <path d="M44 12 L48 7 L43 11 Z" fill="#D4CEC4" opacity="0.4"/>
+  <!-- Eyes (frowning brows + flat eyes) -->
+  <path d="M23 18 L29 20" stroke="#2D2A26" stroke-width="2" stroke-linecap="round"/>
+  <path d="M35 20 L41 18" stroke="#2D2A26" stroke-width="2" stroke-linecap="round"/>
+  <line x1="26" y1="21.5" x2="30" y2="21.5" stroke="#2D2A26" stroke-width="2" stroke-linecap="round"/>
+  <line x1="34" y1="21.5" x2="38" y2="21.5" stroke="#2D2A26" stroke-width="2" stroke-linecap="round"/>
+  <!-- Nose -->
+  <ellipse cx="32" cy="25" rx="2" ry="1.5" fill="#2D2A26"/>
+  <!-- Mouth (frown) -->
+  <path d="M28 29 Q32 26 36 29" stroke="#2D2A26" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Whiskers left -->
+  <line x1="22" y1="25" x2="16" y2="23" stroke="#2D2A26" stroke-width="1" stroke-linecap="round"/>
+  <line x1="22" y1="26.5" x2="16" y2="27" stroke="#2D2A26" stroke-width="1" stroke-linecap="round"/>
+  <!-- Whiskers right -->
+  <line x1="42" y1="25" x2="48" y2="23" stroke="#2D2A26" stroke-width="1" stroke-linecap="round"/>
+  <line x1="42" y1="26.5" x2="48" y2="27" stroke="#2D2A26" stroke-width="1" stroke-linecap="round"/>
+  <!-- Arms crossed -->
+  <path d="M18 35 Q22 38 26 36 Q28 34 24 32 Q20 30 18 34" fill="#FAF6F0" stroke="#2D2A26" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M46 35 Q42 38 38 36 Q36 34 40 32 Q44 30 46 34" fill="#FAF6F0" stroke="#2D2A26" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- Coin/bell -->
+  <circle cx="32" cy="56" r="3" fill="#F2C94C" stroke="#2D2A26" stroke-width="1.5"/>
+  <!-- Collar -->
+  <path d="M20 33 Q32 37 44 33" stroke="#2D2A26" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Tail (low, grumpy) -->
+  <path d="M18 56 Q8 52 10 44" stroke="#2D2A26" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>

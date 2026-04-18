@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-label="Neutral lucky cat">
+  <!-- Body -->
+  <ellipse cx="32" cy="42" rx="14" ry="16" fill="#FAF6F0" stroke="#2D2A26" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="32" cy="22" r="13" fill="#FAF6F0" stroke="#2D2A26" stroke-width="2"/>
+  <!-- Left ear -->
+  <path d="M19 14 L14 6 L22 11 Z" fill="#FAF6F0" stroke="#2D2A26" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Right ear -->
+  <path d="M45 14 L50 6 L42 11 Z" fill="#FAF6F0" stroke="#2D2A26" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Inner ear left -->
+  <path d="M19 13 L15 7 L21 11 Z" fill="#D4CEC4" opacity="0.6"/>
+  <!-- Inner ear right -->
+  <path d="M45 13 L49 7 L43 11 Z" fill="#D4CEC4" opacity="0.6"/>
+  <!-- Eyes (calm, half-open) -->
+  <ellipse cx="27" cy="21" rx="3" ry="2.5" fill="#2D2A26"/>
+  <ellipse cx="37" cy="21" rx="3" ry="2.5" fill="#2D2A26"/>
+  <circle cx="27.8" cy="20.2" r="1" fill="white"/>
+  <circle cx="37.8" cy="20.2" r="1" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="32" cy="25" rx="2" ry="1.5" fill="#7A756D"/>
+  <!-- Mouth (neutral) -->
+  <path d="M29 27 Q32 28 35 27" stroke="#2D2A26" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Whiskers left -->
+  <line x1="22" y1="25" x2="16" y2="23" stroke="#2D2A26" stroke-width="1" stroke-linecap="round"/>
+  <line x1="22" y1="26" x2="16" y2="26" stroke="#2D2A26" stroke-width="1" stroke-linecap="round"/>
+  <!-- Whiskers right -->
+  <line x1="42" y1="25" x2="48" y2="23" stroke="#2D2A26" stroke-width="1" stroke-linecap="round"/>
+  <line x1="42" y1="26" x2="48" y2="26" stroke="#2D2A26" stroke-width="1" stroke-linecap="round"/>
+  <!-- Both arms at sides -->
+  <path d="M18 36 Q14 40 16 46" stroke="#2D2A26" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M46 36 Q50 40 48 46" stroke="#2D2A26" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Coin/bell -->
+  <circle cx="32" cy="56" r="3" fill="#F2C94C" stroke="#2D2A26" stroke-width="1.5"/>
+  <!-- Collar -->
+  <path d="M20 33 Q32 37 44 33" stroke="#6B9B6B" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Tail -->
+  <path d="M18 54 Q10 50 12 42" stroke="#2D2A26" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>
