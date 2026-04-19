@@ -16,7 +16,7 @@ export default function PageContainer({
     <main
       className={cn(
         "mx-auto w-full max-w-[1200px] flex-1",
-        !noPadding && "px-4 py-8 sm:px-6 sm:py-12",
+        !noPadding && "px-4 py-4 sm:px-6 sm:py-6",
         className
       )}
     >

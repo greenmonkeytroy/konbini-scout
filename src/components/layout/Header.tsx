@@ -12,7 +12,7 @@ export default function Header({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-1.5 sm:px-6">
         {/* Wordmark */}
         <Link
           href="/"

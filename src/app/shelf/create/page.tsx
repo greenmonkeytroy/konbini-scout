@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, Check } from "lucide-react";
 import { toast } from "sonner";
+import { trackEvent } from "@/lib/analytics";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import PageContainer from "@/components/layout/PageContainer";
@@ -53,6 +54,7 @@ export default function CreateShelfPage() {
         snackIds: selected,
       });
       toast.success("Shelf created!");
+      trackEvent("shelf_created");
       router.push(`/shelf/${slug}`);
     } catch (e: unknown) {
       toast.error(e instanceof Error ? e.message : "Failed to create shelf.");

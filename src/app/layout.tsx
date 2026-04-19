@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Dela_Gothic_One, Nunito, JetBrains_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import ConvexClientProvider from "@/components/providers/ConvexClientProvider";
 
@@ -65,6 +66,7 @@ export default function RootLayout({
             }}
           />
         </ClerkProvider>
+        <Analytics />
       </body>
     </html>
   );

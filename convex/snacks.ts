@@ -115,6 +115,37 @@ export const byMaker = query({
   },
 });
 
+export const topByCategory = query({
+  args: {
+    category: v.union(v.literal("savoury"), v.literal("sweet")),
+    limit: v.optional(v.number()),
+  },
+  handler: async (ctx, args) => {
+    const snacks = await ctx.db
+      .query("snacks")
+      .withIndex("by_category", (q) => q.eq("category", args.category))
+      .filter((q) => q.eq(q.field("isPublished"), true))
+      .collect();
+
+    const top = snacks
+      .sort((a, b) => b.averageRating - a.averageRating)
+      .slice(0, args.limit ?? 5);
+
+    return await Promise.all(
+      top.map(async (snack) => {
+        const maker = await ctx.db.get(snack.makerId);
+        const illustrationUrl = snack.illustrationStorageId
+          ? await ctx.storage.getUrl(snack.illustrationStorageId)
+          : null;
+        const photoUrl = snack.photoStorageId
+          ? await ctx.storage.getUrl(snack.photoStorageId)
+          : null;
+        return { ...snack, maker, illustrationUrl, photoUrl };
+      })
+    );
+  },
+});
+
 export const list = query({
   args: {},
   handler: async (ctx) => {

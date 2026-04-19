@@ -4,7 +4,7 @@ export default function Footer({ className }: { className?: string }) {
   return (
     <footer
       className={cn(
-        "mt-auto border-t border-border-warm bg-shelf-wood py-8",
+        "mt-auto border-t border-border-warm bg-shelf-wood py-4",
         className
       )}
     >

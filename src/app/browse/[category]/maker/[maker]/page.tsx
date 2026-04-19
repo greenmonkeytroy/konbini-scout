@@ -17,12 +17,12 @@ export default function MakerShelfPage() {
 
   const maker = useQuery(api.makers.bySlug, { slug: makerSlug });
   const snacks = useQuery(api.snacks.byMaker, { makerSlug, category });
+  const communitySnacks = useQuery(api.community.topByMaker, { makerSlug, category });
 
   return (
     <>
       <Header />
       <PageContainer>
-        {/* Back */}
         <Link
           href={`/browse/${category}`}
           className="mb-6 inline-flex items-center gap-1 text-sm font-semibold text-nori-light transition-colors hover:text-nori"
@@ -54,6 +54,14 @@ export default function MakerShelfPage() {
             snacks={snacks}
             emptyMessage={`No ${category} snacks from ${maker?.name ?? makerSlug} yet.`}
           />
+        )}
+
+        {communitySnacks && communitySnacks.length > 0 && (
+          <div className="mt-16">
+            <h2 className="mb-1 font-display text-2xl text-nori">Community Top 5</h2>
+            <p className="mb-8 text-sm text-nori-light">Rated by Konbini Scout snackers.</p>
+            <ShelfDisplay snacks={communitySnacks} />
+          </div>
         )}
       </PageContainer>
       <Footer />
